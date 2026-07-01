@@ -269,7 +269,7 @@ export default function Footer() {
                         </Link>
 
                         <Link
-                            href="/terms"
+                            href="/privacy-policy"
                             className="text-gray-400 hover:text-[#A67D7A]"
                         >
                             Terms & Conditions
