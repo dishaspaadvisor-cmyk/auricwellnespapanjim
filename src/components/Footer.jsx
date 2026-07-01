@@ -33,7 +33,7 @@ export default function Footer() {
                     <div>
                         <Image
                             src="/logo/Auric_wellness_spa_panjim_favbar.webp"
-                            alt="Ritual Spa"
+                            alt="Auric wellness spa"
                             width={180}
                             height={180}
                         />
@@ -256,7 +256,7 @@ export default function Footer() {
                 <div className="border-t border-white/20 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
 
                     <p className="text-gray-400 text-center">
-                        © {new Date().getFullYear()} Ritual Spa. All Rights Reserved.
+                        © {new Date().getFullYear()} Auric wellness spa. All Rights Reserved.
                     </p>
 
                     <div className="flex gap-6 mt-4 md:mt-0">

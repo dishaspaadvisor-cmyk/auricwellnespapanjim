@@ -31,7 +31,7 @@ export default function AboutPage() {
                             <div className="w-20 h-1 bg-[#A67D7A] rounded-full mt-4 mb-6"></div>
 
                             <p className="text-gray-600 leading-7 md:leading-8 text-sm sm:text-base">
-                                Ritual Spa was founded with a passion for creating a peaceful
+                                Auric wellness spa was founded with a passion for creating a peaceful
                                 sanctuary where every guest can experience true relaxation and
                                 wellness. Every treatment is designed to restore balance,
                                 relieve stress, and rejuvenate both body and mind.
@@ -82,7 +82,7 @@ export default function AboutPage() {
                         <div className="w-24 h-1 bg-[#A67D7A] rounded-full mt-4 mb-6"></div>
 
                         <p className="text-gray-600 leading-7 md:leading-8 text-sm sm:text-base">
-                            At Ritual Spa, wellness is more than a treatment—it's a lifestyle.
+                            At Auric wellness spa, wellness is more than a treatment—it's a lifestyle.
                             We provide a luxurious escape where guests can unwind, recharge,
                             and reconnect with themselves through premium spa therapies in panjim goa.
                         </p>
@@ -108,7 +108,7 @@ export default function AboutPage() {
 
                         <p className="text-gray-600 leading-7 md:leading-8 text-sm sm:text-base mt-5">
                             Whether you're looking for deep relaxation, stress relief, or a
-                            complete wellness journey, Ritual Spa is dedicated to providing
+                            complete wellness journey, Auric wellness spa is dedicated to providing
                             outstanding hospitality with every visit in panjim goa .
                         </p>
 
