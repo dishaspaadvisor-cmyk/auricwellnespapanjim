@@ -46,7 +46,7 @@ export default function GalleryPage() {
             {/* Hero Section */}
             <section className="relative h-[45vh] sm:h-[55vh] md:h-[65vh]">
                 <Image
-                    src="/servicesgallery/caption.jpg"
+                    src="/heroimage/heroimage1.png"
                     alt="Gallery"
                     fill
                     priority

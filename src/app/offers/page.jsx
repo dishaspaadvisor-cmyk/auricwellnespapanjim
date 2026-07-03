@@ -13,7 +13,7 @@ export default function OffersPage() {
       {/* Hero Section */}
       <section className="relative h-[55vh]">
         <Image
-          src="/heroimage/woman-getting-hair-treatment-1024x682.jpg"
+          src="/heroimage/massage-dubai.jpg"
           alt="Offers"
           fill
           priority
