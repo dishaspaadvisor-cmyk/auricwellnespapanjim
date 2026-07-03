@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import { navigation } from "@/data/spadata";
 
 export const metadata = {
-  metadataBase: new URL("https://www.spaplanet.in"), // Change to your domain
+  metadataBase: new URL("https://www.auricwellness.co.in"), // Change to your domain
 
   title: {
     default: "Auric Wellness | Luxury Spa & Full Body Massage Center",
@@ -83,7 +83,7 @@ export const metadata = {
     title: "Auric Wellness | Luxury Spa & Wellness Center",
     description:
       "Experience premium spa treatments including Full Body Massage, Thai Massage, Swedish Massage, Deep Tissue Massage, Couple Spa, Wellness Therapy and more.",
-    url: "https://www.Auricwellness.in",
+    url: "https://www.auricwellness.co.in",
     siteName: "Auric Wellness",
     locale: "en_IN",
     type: "website",
