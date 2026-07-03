@@ -14,6 +14,11 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { useState } from "react";
+import {
+  FaTimes,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
 
 
 export default function Home() {
@@ -78,49 +83,53 @@ export default function Home() {
       </section>
 
       {/* Gallery */}
-      <section className="pb-20 bg-[#faf8f6]">
-        <section className="py-14 md:py-16 bg-[#faf8f6]">
-          <div className="max-w-3xl mx-auto text-center px-6">
-            <h2 className="text-3xl md:text-4xl font-serif text-[#2d2926]">
-              Explore Our Spa
-            </h2>
+      <section className="pb-12 md:pb-20 bg-[#faf8f6]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          {/* Heading */}
+          <div className="text-center mb-14">
+            <h2 className="text-4xl md:text-5xl font-serif text-gray-900">
+              Our Spa Gallery
+            </h2> 
+            
 
-            <p className="text-gray-600 mt-5 leading-8">
-              Every corner of our spa is thoughtfully designed to provide comfort,
-              elegance, and complete relaxation.in panjim, goa. we offer a wide range of spa services including massages, facials, body treatments, and more. our experienced therapists use high-quality products and techniques to ensure a rejuvenating experience for our clients.
+
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Full Body Massage,Thai Massage,Deep Tissue Massage,
+              Swedish Massage,Spa Near Me,Massage Near Me
+
             </p>
           </div>
-        </section>
-        <div className="max-w-7xl mx-auto px-5 sm:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
 
             {galleryImages.map((image, index) => (
               <div
                 key={index}
                 onClick={() => setSelectedIndex(index)}
-                className="group relative overflow-hidden rounded-3xl shadow-xl cursor-pointer"
+                className="group relative overflow-hidden rounded-3xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer"
               >
                 <Image
                   src={image}
                   alt={`Gallery ${index + 1}`}
-                  width={600}
-                  height={600}
-                  className="w-full h-[260px] sm:h-[320px] lg:h-[380px] object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                  width={700}
+                  height={900}
+                  quality={100}
+                  sizes="(max-width:640px) 50vw,
+                         (max-width:1024px) 50vw,
+                         33vw"
+                  className="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/20 lg:group-hover:bg-black/60 transition-all duration-500" />
+                {/* Desktop Overlay */}
+                <div className="absolute inset-0 bg-transparent lg:bg-black/0 lg:group-hover:bg-black/20 transition-all duration-300" />
 
-                {/* Content */}
-                <div className="absolute inset-0 flex flex-col justify-center items-center opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500">
+                {/* Desktop Only Button */}
+                <div className="absolute bottom-5 left-1/2 -translate-x-1/2 hidden lg:block opacity-0 group-hover:opacity-100 transition-all duration-300">
 
-
-
-                  <h3 className="text-white text-xl md:text-2xl font-semibold mt-4">
-                    Luxury Spa
-                  </h3>
-
-                  <button className="mt-3 bg-white text-[#A67D7A] px-5 py-2 rounded-full font-medium hover:bg-[#A67D7A] hover:text-white transition">
+                  <button
+                    type="button"
+                    className="bg-white text-[#A67D7A] px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#A67D7A] hover:text-white transition"
+                  >
                     View Image
                   </button>
 
@@ -132,7 +141,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Image Modal */}
+      {/* Modal */}
       {selectedIndex !== null && (
         <div
           className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
@@ -141,7 +150,7 @@ export default function Home() {
           {/* Close */}
           <button
             onClick={closeModal}
-            className="absolute top-5 right-5 text-white text-3xl hover:text-red-400 transition z-50"
+            className="absolute top-4 right-4 md:top-6 md:right-6 text-white text-3xl hover:text-red-400 transition z-50"
           >
             <FaTimes />
           </button>
@@ -152,22 +161,24 @@ export default function Home() {
               e.stopPropagation();
               prevImage();
             }}
-            className="absolute left-3 md:left-8 text-white text-2xl md:text-4xl bg-white/10 hover:bg-white/20 rounded-full p-3 transition"
+            className="absolute left-2 md:left-6 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition z-50"
           >
-            <FaChevronLeft />
+            <FaChevronLeft className="text-xl md:text-3xl" />
           </button>
 
           {/* Image */}
           <div
-            className="relative w-full max-w-5xl"
+            className="w-full max-w-6xl px-10 md:px-16"
             onClick={(e) => e.stopPropagation()}
           >
             <Image
               src={galleryImages[selectedIndex]}
-              alt="Gallery Image"
-              width={1400}
-              height={1000}
-              className="w-full h-auto max-h-[85vh] object-contain rounded-xl"
+              alt={`Gallery ${selectedIndex + 1}`}
+              width={1800}
+              height={2400}
+              quality={100}
+              priority
+              className="w-full h-auto max-h-[90vh] object-contain rounded-2xl"
             />
           </div>
 
@@ -177,43 +188,55 @@ export default function Home() {
               e.stopPropagation();
               nextImage();
             }}
-            className="absolute right-3 md:right-8 text-white text-2xl md:text-4xl bg-white/10 hover:bg-white/20 rounded-full p-3 transition"
+            className="absolute right-2 md:right-6 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full transition z-50"
           >
-            <FaChevronRight />
+            <FaChevronRight className="text-xl md:text-3xl" />
           </button>
         </div>
       )}
 
       {/* Offers Section */}
-      <section className="py-20 bg-[#faf8f6]">
-        <div className="max-w-7xl mx-auto px-6">
+  
+      <section className="py-12 md:py-20 bg-[#faf8f6]">
 
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-serif">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+          <div className="text-center mb-10 md:mb-14">
+
+            <h2 className="text-3xl md:text-5xl font-serif text-gray-900">
               Exclusive Spa Offers
             </h2>
 
-            <p className="text-gray-600 mt-4">
-              Choose your favorite offer and book your appointment today in Panjim, Goa.
+            <p className="text-gray-600 mt-3">
+              Choose your favorite offer and book your appointment today.
             </p>
+
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {offers.map((offer, index) => (
+
               <div
                 key={index}
-                className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+                className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-500"
               >
-                <Image
-                  src={offer}
-                  alt={`Offer ${index + 1}`}
-                  width={500}
-                  height={650}
-                  className="w-full h-[420px] object-cover hover:scale-105 transition duration-500"
-                />
 
-                <div className="p-6">
+                {/* Image */}
+                <div className="overflow-hidden bg-white">
+
+                  <Image
+                    src={offer}
+                    alt={`Offer ${index + 1}`}
+                    width={600}
+                    height={850}
+                    className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
+                  />
+
+                </div>
+
+                {/* Buttons */}
+                <div className="p-5">
 
                   <div className="flex gap-3">
 
@@ -221,24 +244,26 @@ export default function Home() {
                       href="https://wa.me/918422902212?text=Hello%20I%20am%20interested%20in%20your%20spa%20offer"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 flex justify-center items-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 rounded-full transition"
+                      className="flex-1 flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 rounded-full font-medium transition-all duration-300 hover:scale-105"
                     >
-                      <FaWhatsapp />
-                      WhatsApp
+                      <FaWhatsapp className="text-lg" />
+                      <span>WhatsApp</span>
                     </a>
 
                     <a
                       href="tel:+918422902212"
-                      className="flex-1 flex justify-center items-center gap-2 bg-[#A67D7A] hover:bg-[#8b6664] text-white py-3 rounded-full transition"
+                      className="flex-1 flex items-center justify-center gap-2 bg-[#A67D7A] hover:bg-[#8b6664] text-white py-3 rounded-full font-medium transition-all duration-300 hover:scale-105"
                     >
                       <FaPhoneAlt />
-                      Call
+                      <span>Call</span>
                     </a>
 
                   </div>
 
                 </div>
+
               </div>
+
             ))}
 
           </div>
@@ -260,12 +285,18 @@ export default function Home() {
 
               <div className="space-y-5 text-gray-700">
 
-                <p className="flex gap-3">
-                  <FaMapMarkerAlt className="text-[#A67D7A] mt-1" />
-                  103, First Floor, GERA's Emperium Premio, House No. KP-16-88, Survey No. 13/1-A
-                  (Part), Village Panelim, Kadamba Plateau, Panaji,
-                  North Goa, Goa - 403006
-                </p>
+            <p className="flex items-start gap-4 text-gray-700 leading-7">
+                <FaMapMarkerAlt
+                  size={22}
+                  className="text-[#A67D7A] flex-shrink-0 mt-1"
+                />
+
+                <span>
+                  103, First Floor, GERA's Emperium Premio, House No. KP-16-88,
+                  Survey No. 13/1-A (Part), Village Panelim, Kadamba Plateau,
+                  Panaji, North Goa, Goa - 403006
+                </span>
+              </p>
 
                 <p className="flex gap-3">
                   <FaPhoneAlt className="text-[#A67D7A]" />
@@ -317,7 +348,7 @@ export default function Home() {
             <div>
 
               <Image
-                src="/about/photo-1620733723572-11c53f73a416.avif"
+                src="/about/Deep Tissue Massage.jpg"
                 alt="Contact"
                 width={600}
                 height={400}

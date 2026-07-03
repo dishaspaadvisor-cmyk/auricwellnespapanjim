@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
       {/* Hero Section */}
       <section className="relative h-[50vh] flex items-center justify-center">
         <Image
-          src="/images/privacy-bg.jpg"
+          src="/privacyimage/Privacy-policy-vs-privacy-notice.png"
           alt="Spa Background"
           fill
           priority

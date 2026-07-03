@@ -3,6 +3,7 @@ import "./globals.css";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingButtons from "@/components/FloatingButtons";
 
 import { navigation } from "@/data/spadata";
 
@@ -130,23 +131,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-white text-gray-900">
+<body className="min-h-screen flex flex-col bg-white text-gray-900">
 
-        <TopBar data={navigation.topbar} />
+  <TopBar data={navigation.topbar} />
 
-        <Navbar
-          logo={navigation.logo}
-          menu={navigation.menu}
-          button={navigation.button}
-        />
+  <Navbar
+    logo={navigation.logo}
+    menu={navigation.menu}
+    button={navigation.button}
+  />
 
-        <main className="flex-1">
-          {children}
-        </main>
+  <main className="flex-1">
+    {children}
+  </main>
 
-        <Footer />
+  <Footer />
 
-      </body>
+  <FloatingButtons />
+
+</body>
     </html>
   );
 }

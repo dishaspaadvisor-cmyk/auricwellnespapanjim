@@ -65,11 +65,11 @@ export default function FeatureCards() {
             return (
               <div
                 key={card.title}
-                className="group bg-white rounded-3xl border border-gray-100 p-6 sm:p-8 shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+                className="group bg-white rounded-3xl p-6 sm:p-8 text-center shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
               >
                 {/* Icon */}
                 <div
-                  className={`w-16 h-16 flex items-center justify-center rounded-2xl ${card.color}`}
+                  className={`w-16 h-16 mx-auto flex items-center justify-center rounded-2xl ${card.color}`}
                 >
                   <Icon size={30} />
                 </div>
@@ -87,7 +87,7 @@ export default function FeatureCards() {
                 {/* Button */}
                 <Link
                   href={card.href}
-                  className="inline-flex items-center justify-center mt-6 rounded-full bg-amber-500 hover:bg-pink-700 text-white font-semibold px-6 py-3 transition w-full sm:w-auto"
+                  className="inline-flex items-center justify-center mt-8 rounded-full bg-amber-500 hover:bg-pink-700 text-white font-semibold px-6 py-3 transition-all duration-300 w-full sm:w-auto"
                 >
                   {card.button}
                 </Link>

@@ -80,25 +80,26 @@ export const navigation = {
 };
 export const heroData = {
   images: [
-    "/heroimage/hero1.png",
-    "/heroimage/heroimage2.png",
-    "/heroimage/heroimage1.png",
+    {
+      desktop: "/heroimage/hero1.png",
+      mobile: "/servicesgallery/servicesgallery2.png",
+    },
+    {
+      desktop: "/heroimage/heroimage1.png",
+      mobile: "/servicesgallery/services3.png",
+    },
+    {
+      desktop: "/heroimage/Gemini_Generated_Image_wp8nauwp8nauwp8n.png",
+      mobile: "/servicesgallery/services1.png",
+    },
   ],
 
   subtitle: "Luxury Spa & Wellness",
 
-  title: "No 1 spa in Panjim, Goa ,best services available",
+  title: "No 1 Spa in Panjim, Goa ",
 
   description:
-    "Experience premium massage therapies and wellness treatments designed to  rejuvenate your body, calm your mind, and restore your inner balance.",
+    "Experience premium massage therapies and wellness treatments designed to rejuvenate your body, calm your mind, and restore your inner balance.",
 
-  primaryButton: {
-    text: "Book Appointment",
-    href: "/contact",
-  },
 
-  secondaryButton: {
-    text: "Explore Services",
-    href: "/services",
-  },
 };

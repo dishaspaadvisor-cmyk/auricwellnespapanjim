@@ -116,20 +116,9 @@ export default function Footer() {
 
                             <li>• Body Scrub</li>
 
-                            <li>Pain Relief Massage
-                            </li>
-                            <li> Spa Therapy
-                            </li>
-                            <li>  </li>
-                            <li></li>
-
-                            <li>Spa Near Me</li>
-                            <li>Couple Spa
-                            </li>
-                            <li>Luxury Spa
-                            </li>
-
-
+                            <li> • Pain Relief Massage  </li>
+                      
+                            <li> •  Spa Therapy     </li>
 
                         </ul>
                     </div>
@@ -144,8 +133,8 @@ export default function Footer() {
                         <div className="space-y-5">
 
                             <div className="flex items-start gap-3">
-                                <FaMapMarkerAlt className="text-black mt-1" />
-                                <p className="text-black">
+                                <FaMapMarkerAlt className="text-black  size-7 mt-1" />
+                                <p className="text-black ">
                                     103, First Floor, GERA's Emperium Premio, House No. KP-16-88, Survey No. 13/1-A
                                     <br />
                                     (Part), Village Panelim, Kadamba Plateau, Panaji,

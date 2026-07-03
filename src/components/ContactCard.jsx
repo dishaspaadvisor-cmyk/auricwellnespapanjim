@@ -26,11 +26,17 @@ export default function ContactCard() {
 
             <div className="space-y-5 text-gray-700">
 
-              <p className="flex gap-3">
-                <FaMapMarkerAlt className="text-[#A67D7A] mt-1" />
-                103, First Floor, GERA's Emperium Premio, House No. KP-16-88, Survey No. 13/1-A
-                (Part), Village Panelim, Kadamba Plateau, Panaji,
-                North Goa, Goa - 403006
+              <p className="flex items-start gap-4 text-gray-700 leading-7">
+                <FaMapMarkerAlt
+                  size={22}
+                  className="text-[#A67D7A] flex-shrink-0 mt-1"
+                />
+
+                <span>
+                  103, First Floor, GERA's Emperium Premio, House No. KP-16-88,
+                  Survey No. 13/1-A (Part), Village Panelim, Kadamba Plateau,
+                  Panaji, North Goa, Goa - 403006
+                </span>
               </p>
 
               <p className="flex gap-3">
@@ -64,7 +70,7 @@ export default function ContactCard() {
               </a>
 
               <a href="https://www.linkedin.com/in/auric-wellness-spa-panjim-75207a41a/" className="w-10 h-10 rounded-full bg-[#A67D7A] text-white flex items-center justify-center">
-                <FaLinkedin  />
+                <FaLinkedin />
               </a>
 
             </div>
@@ -73,7 +79,7 @@ export default function ContactCard() {
 
             <iframe
               className="w-full h-72 rounded-xl mt-8"
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.8363413561774!2d73.8890263!3d15.4922132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfbf1e753d9ba7%3A0xb8bab8de7c77defb!2sGera%E2%80%99s%20Imperium%20Premio!5e1!3m2!1sen!2sin!4v1782902281923!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.8363413561774!2d73.8890263!3d15.4922132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfbf1e753d9ba7%3A0xb8bab8de7c77defb!2sGera%E2%80%99s%20Imperium%20Premio!5e1!3m2!1sen!2sin!4v1782902281923!5m2!1sen!2sin"
               loading="lazy"
             ></iframe>
 
@@ -84,7 +90,7 @@ export default function ContactCard() {
           <div>
 
             <Image
-              src="/about/photo-1620733723572-11c53f73a416.avif"
+              src="/about/Deep Tissue Massage.jpg"
               alt="Contact"
               width={600}
               height={400}

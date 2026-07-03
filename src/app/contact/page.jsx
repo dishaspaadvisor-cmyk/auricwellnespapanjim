@@ -9,7 +9,7 @@ export default function ContactPage() {
       <section className="relative h-[50vh]">
 
         <Image
-          src="/heroimage/images.jpg"
+          src="/servicesgallery/df09709b-9306-444c-830e-7ba6df05db13.png"
           alt="Contact"
           fill
           priority

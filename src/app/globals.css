@@ -60,3 +60,18 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-btn {
+  animation: floating 2.5s ease-in-out infinite;
+}
