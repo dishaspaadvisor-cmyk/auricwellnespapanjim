@@ -9,7 +9,7 @@ export default function ServicesPage() {
             <section className="relative h-[70vh]">
 
                 <Image
-                    src="/heroimage/6879c37f4455261d79f409cc_1752810367366.jpg"
+                    src="/heroimage/istockphoto-469640918-612x612.jpg"
                     alt="Spa Services"
                     fill
                     priority
