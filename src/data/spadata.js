@@ -81,8 +81,8 @@ export const navigation = {
 export const heroData = {
   images: [
     "/heroimage/hero1.png",
-    "/heroimage/unnamed.png",
-    "/heroimage/e026d684-02d6-4408-9e68-fc010b5319d3.png",
+    "/heroimage/heroimage2.png",
+    "/heroimage/heroimage1.png",
   ],
 
   subtitle: "Luxury Spa & Wellness",

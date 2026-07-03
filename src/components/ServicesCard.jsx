@@ -4,12 +4,12 @@ import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
 const services = [
     {
         title: "Swedish Massage",
-        image: "/servicesgallery/service9.png",
+        image: "/servicesgallery/servicesgallery2.png",
         description: "Relax your body with our Swedish Massage therapy.",
     },
     {
         title: "Deep Tissue",
-        image: "/servicesgallery/service10.webp",
+        image: "/servicesgallery/services4.png",
         description: "Relieve muscle pain and stiffness.",
     },
     {
@@ -19,12 +19,12 @@ const services = [
     },
     {
         title: "Female to Male Massage",
-        image: "/servicesgallery/images.jpg",
+        image: "/servicesgallery/services1.png",
         description: "Exfoliating treatment for glowing skin.",
     },
     {
         title: "Hot Oil Massage",
-        image: "/servicesgallery/service4.webp",
+        image: "/servicesgallery/services3.png",
         description: "Warm oils and soothing techniques for deep relaxation.",
     },
     {

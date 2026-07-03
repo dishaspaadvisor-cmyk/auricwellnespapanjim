@@ -13,7 +13,7 @@ export default function AboutPage() {
                         {/* Main Image */}
                         <div className="overflow-hidden rounded-3xl shadow-xl">
                             <Image
-                                src="/about/Deep Tissue Massage.jpg"
+                                src="/about/aboutimage.png"
                                 alt="Massage"
                                 width={370}
                                 height={320}
