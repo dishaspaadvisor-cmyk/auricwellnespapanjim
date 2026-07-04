@@ -10,11 +10,12 @@ export default function ServicesPage() {
             <section className="relative h-[45vh] md:h-[70vh]">
 
                 <Image
-                    src="/heroimage/istockphoto-469640918-612x612.jpg"
-                    alt="Spa Services"
+                    src="/heroimage/heroimage1.png"
+                    alt="Gallery"
                     fill
                     priority
-                    className="object-cover"
+                    quality={100}
+                    className="object-cover object-top "
                 />
 
                 <div className="absolute inset-0 bg-black/50"></div>

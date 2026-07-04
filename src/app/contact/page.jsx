@@ -9,11 +9,12 @@ export default function ContactPage() {
       <section className="relative h-[50vh]">
 
         <Image
-          src="/servicesgallery/df09709b-9306-444c-830e-7ba6df05db13.png"
-          alt="Contact"
+          src="/heroimage/heroimage1.png"
+          alt="Gallery"
           fill
           priority
-          className="object-cover"
+          quality={100}
+          className="object-cover object-top "
         />
 
         <div className="absolute inset-0 bg-black/50"></div>

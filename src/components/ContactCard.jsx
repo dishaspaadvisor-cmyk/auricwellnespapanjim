@@ -94,7 +94,7 @@ export default function ContactCard() {
               alt="Contact"
               width={600}
               height={400}
-              className="rounded-2xl mb-8 w-full h-72 object-cover"
+              className="rounded-2xl mb-8 w-full h-72 object-cover object-top"
             />
 
             <h2 className="text-4xl font-serif mb-6">

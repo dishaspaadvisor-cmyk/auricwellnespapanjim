@@ -47,7 +47,7 @@ export default function GalleryPage() {
           fill
           priority
           quality={100}
-          className="object-cover"
+          className="object-cover object-top "
         />
 
         <div className="absolute inset-0 bg-black/50" />
